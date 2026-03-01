@@ -1,0 +1,120 @@
+---
+ru:
+  investments:
+    edit:
+      edit: Изменить %{account}
+    form:
+      none: Нет
+      subtype_prompt: Выберите тип инвестиционного счёта
+    new:
+      title: Ввести баланс счёта
+    show:
+      chart_title: Общая стоимость
+    subtypes:
+      brokerage:
+        short: Брокерский
+        long: Брокерский счёт
+      401k:
+        short: 401(k)
+        long: 401(k)
+      roth_401k:
+        short: Roth 401(k)
+        long: Roth 401(k)
+      403b:
+        short: 403(b)
+        long: 403(b)
+      457b:
+        short: 457(b)
+        long: 457(b)
+      tsp:
+        short: TSP
+        long: Thrift Savings Plan
+      ira:
+        short: IRA
+        long: Traditional IRA
+      roth_ira:
+        short: Roth IRA
+        long: Roth IRA
+      sep_ira:
+        short: SEP IRA
+        long: SEP IRA
+      simple_ira:
+        short: SIMPLE IRA
+        long: SIMPLE IRA
+      529_plan:
+        short: 529 Plan
+        long: 529 Education Savings Plan
+      hsa:
+        short: HSA
+        long: Health Savings Account
+      ugma:
+        short: UGMA
+        long: UGMA Custodial Account
+      utma:
+        short: UTMA
+        long: UTMA Custodial Account
+      isa:
+        short: ISA
+        long: Individual Savings Account
+      lisa:
+        short: LISA
+        long: Lifetime ISA
+      sipp:
+        short: SIPP
+        long: Self-Invested Personal Pension
+      workplace_pension_uk:
+        short: Пенсия
+        long: Рабочая пенсия
+      rrsp:
+        short: RRSP
+        long: Registered Retirement Savings Plan
+      tfsa:
+        short: TFSA
+        long: Tax-Free Savings Account
+      resp:
+        short: RESP
+        long: Registered Education Savings Plan
+      lira:
+        short: LIRA
+        long: Locked-In Retirement Account
+      rrif:
+        short: RRIF
+        long: Registered Retirement Income Fund
+      super:
+        short: Super
+        long: Superannuation
+      smsf:
+        short: SMSF
+        long: Self-Managed Super Fund
+      pea:
+        short: PEA
+        long: Plan d'Épargne en Actions
+      pillar_3a:
+        short: Pillar 3a
+        long: Private Pension (Pillar 3a)
+      riester:
+        short: Riester
+        long: Riester-Rente
+      pension:
+        short: Пенсия
+        long: Пенсионный счёт
+      retirement:
+        short: Пенсия
+        long: Пенсионный счёт
+      mutual_fund:
+        short: ПИФ
+        long: ПИФ
+      angel:
+        short: Angel
+        long: Angel Investment
+      trust:
+        short: Trust
+        long: Trust
+      other:
+        short: Другое
+        long: Другой инвестиционный счёт
+    value_tooltip:
+      cash: Денежные средства
+      holdings: Позиции
+      total: Баланс портфеля
+      total_value_tooltip: Общий баланс портфеля — сумма денежных средств брокера и текущей рыночной стоимости позиций.

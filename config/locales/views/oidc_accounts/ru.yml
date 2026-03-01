@@ -1,0 +1,33 @@
+---
+ru:
+  oidc_accounts:
+    link:
+      title_link: Подключить OIDC-аккаунт
+      title_create: Создать аккаунт
+      verify_heading: Подтвердите личность
+      verify_description_html: "Чтобы подключить аккаунт %{provider}%{email_suffix}, введите пароль для проверки."
+      email_suffix_html: " (<strong>%{email}</strong>)"
+      email_label: Email
+      email_placeholder: Введите email
+      password_label: Пароль
+      password_placeholder: Введите пароль
+      verify_hint: Так мы убеждаемся, что только вы можете подключать внешние аккаунты к профилю.
+      submit_link: Подключить аккаунт
+      create_heading: Создать новый аккаунт
+      create_description_html: "Аккаунт с email <strong>%{email}</strong> не найден. Нажмите ниже, чтобы создать аккаунт с учётными данными %{provider}."
+      info_email: "Email:"
+      info_name: "Имя:"
+      submit_create: Создать аккаунт
+      account_creation_disabled: Регистрация через единый вход отключена. Обратитесь к администратору.
+      cancel: Отмена
+    new_user:
+      title: Завершите настройку аккаунта
+      heading: Создание аккаунта
+      description: Подтвердите данные для завершения регистрации с учётной записью %{provider}.
+      email_label: Email (от SSO-провайдера)
+      first_name_label: Имя
+      first_name_placeholder: Введите имя
+      last_name_label: Фамилия
+      last_name_placeholder: Введите фамилию
+      submit: Создать аккаунт
+      cancel: Отмена

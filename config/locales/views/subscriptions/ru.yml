@@ -1,0 +1,14 @@
+---
+ru:
+  subscriptions:
+    self_hosted_alert: "%{product_name} недоступен в режиме self-hosted."
+    upgrade:
+      contribute_and_support_sure: "Поддержать проект Sure"
+      cta: "Продолжайте поддерживать разработку!"
+      header:
+        support: "Поддержка"
+        sure: "Sure"
+        today: "сегодня"
+      redirect_to_stripe: "Далее вы будете перенаправлены на Stripe для оплаты картой."
+      trialing: "Ваши данные будут удалены через %{days} дн."
+      trial_over: "Пробный период закончился"

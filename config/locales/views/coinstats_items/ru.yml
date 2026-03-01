@@ -1,0 +1,63 @@
+---
+ru:
+  coinstats_items:
+    create:
+      success: Подключение CoinStats настроено.
+      default_name: Подключение CoinStats
+      errors:
+        validation_failed: "Ошибка проверки: %{message}."
+    update:
+      success: Подключение CoinStats обновлено.
+      errors:
+        validation_failed: "Ошибка проверки: %{message}."
+    destroy:
+      success: Подключение CoinStats запланировано к удалению.
+    link_wallet:
+      success: "Криптокошельков связано: %{count}."
+      missing_params: "Не указаны адрес и блокчейн."
+      failed: Не удалось связать кошелёк.
+      error: "Ошибка связывания кошелька: %{message}."
+    new:
+      title: Подключить криптокошелёк к CoinStats
+      blockchain_fetch_error: Не удалось загрузить блокчейны. Попробуйте позже.
+      address_label: Адрес
+      address_placeholder: Обязательно
+      blockchain_label: Блокчейн
+      blockchain_placeholder: Обязательно
+      blockchain_select_blank: Выберите блокчейн
+      link: Подключить кошелёк
+      not_configured_title: Подключение CoinStats не настроено
+      not_configured_message: Сначала настройте подключение провайдера CoinStats.
+      not_configured_step1_html: Перейдите в <strong>Настройки → Провайдеры</strong>
+      not_configured_step2_html: Найдите провайдера <strong>CoinStats</strong>
+      not_configured_step3_html: Выполните <strong>инструкции по настройке</strong>
+      go_to_settings: Перейти к настройкам провайдеров
+      setup_instructions: "Инструкции:"
+      step1_html: "Получите API-ключ в <a href=\"https://openapi.coinstats.app/\" class=\"link\" target=\"_blank\" rel=\"noopener noreferrer\">CoinStats Public API Dashboard</a>."
+      step2: Введите API-ключ ниже и нажмите «Настроить».
+      step3_html: После подключения перейдите на вкладку <a href="%{accounts_url}" class="link" data-turbo-frame="_top">Счета</a> для настройки кошельков.
+      api_key_label: API-ключ
+      api_key_placeholder: Обязательно
+      configure: Настроить
+      update_configuration: Перенастроить
+      default_name: Подключение CoinStats
+      status_configured_html: Готово к использованию
+      status_not_configured: Не настроено
+    coinstats_item:
+      deletion_in_progress: Данные кошелька удаляются…
+      provider_name: CoinStats
+      syncing: Синхронизация…
+      sync_status:
+        no_accounts: Криптокошельки не найдены
+        all_synced:
+          one: "%{count} кошелёк синхронизирован"
+          other: "%{count} кошельков синхронизировано"
+        partial_sync: "%{linked_count} кошельков синхронизировано, %{unlinked_count} требуют настройки"
+      reconnect: Переподключить
+      status: Синхронизировано %{timestamp} назад
+      status_never: Ни разу не синхронизировалось
+      status_with_summary: "Синхронизировано %{timestamp} назад • %{summary}"
+      update_api_key: Обновить API-ключ
+      delete: Удалить
+      no_wallets_title: Криптокошельки не подключены
+      no_wallets_message: К CoinStats пока не подключены криптокошельки.

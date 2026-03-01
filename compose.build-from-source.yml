@@ -1,0 +1,33 @@
+# ===========================================================================
+# Override: build image from local source instead of pre-built image
+# ===========================================================================
+#
+# Use this when you have changed the code (e.g. added a locale, patches).
+# Run from the repository root (where Dockerfile and this file live).
+#
+# Usage:
+#   docker compose -f compose.example.yml -f compose.build-from-source.yml build
+#   docker compose -f compose.example.yml -f compose.build-from-source.yml up -d
+#
+# Or copy compose.example.yml to compose.yml, replace "image:" with "build: ."
+# for web and worker, then: docker compose build && docker compose up -d
+#
+# ===========================================================================
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sure-web:local
+    volumes:
+      - app-storage:/rails/storage
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sure-web:local
+    command: bundle exec sidekiq
+    volumes:
+      - app-storage:/rails/storage

@@ -1,0 +1,151 @@
+ru:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Название'
+        redirect_uri: 'Redirect URI'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'не должен содержать фрагмент (#).'
+              invalid_uri: 'должен быть корректным URI.'
+              unspecified_scheme: 'должна быть указана схема (http/https).'
+              relative_uri: 'должен быть абсолютным URI.'
+              secured_uri: 'должен быть HTTPS/SSL URI.'
+              forbidden_uri: 'запрещён сервером.'
+            scopes:
+              not_match_configured: 'не совпадает с настройками на сервере.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: 'Вы уверены?'
+      buttons:
+        edit: 'Изменить'
+        destroy: 'Удалить'
+        submit: 'Отправить'
+        cancel: 'Отмена'
+        authorize: 'Разрешить'
+      form:
+        error: 'Проверьте форму на ошибки'
+      help:
+        confidential: 'Приложение будет использоваться там, где секрет клиента можно хранить в тайне. Нативные мобильные приложения и SPA считаются неконфиденциальными.'
+        redirect_uri: 'Один URI на строку'
+        blank_redirect_uri: "Оставьте пустым, если провайдер использует Client Credentials, Resource Owner Password или другой grant без redirect URI."
+        scopes: 'Разделяйте scope пробелами. Пусто — используются scope по умолчанию.'
+      edit:
+        title: 'Редактировать приложение'
+      index:
+        title: 'Ваши приложения'
+        new: 'Новое приложение'
+        name: 'Название'
+        callback_url: 'Callback URL'
+        confidential: 'Конфиденциальное?'
+        actions: 'Действия'
+        confidentiality:
+          'yes': 'Да'
+          'no': 'Нет'
+      new:
+        title: 'Новое приложение'
+      show:
+        title: 'Приложение: %{name}'
+        application_id: 'UID'
+        secret: 'Секрет'
+        secret_hashed: 'Секрет (хеш)'
+        scopes: 'Scope'
+        confidential: 'Конфиденциальное'
+        callback_urls: 'Callback URL'
+        actions: 'Действия'
+        not_defined: 'Не задано'
+
+    authorizations:
+      buttons:
+        authorize: 'Разрешить'
+        deny: 'Отклонить'
+      error:
+        title: 'Произошла ошибка'
+      new:
+        title: 'Требуется авторизация'
+        prompt: 'Разрешить приложению %{client_name} доступ к вашему аккаунту?'
+        able_to: 'Это приложение сможет'
+      show:
+        title: 'Код авторизации'
+      form_post:
+        title: 'Отправить форму'
+
+    authorized_applications:
+      confirmations:
+        revoke: 'Вы уверены?'
+      buttons:
+        revoke: 'Отозвать'
+      index:
+        title: 'Авторизованные приложения'
+        application: 'Приложение'
+        created_at: 'Создано'
+        date_format: '%d.%m.%Y %H:%M:%S'
+
+    pre_authorization:
+      status: 'Предварительная авторизация'
+
+    errors:
+      messages:
+        invalid_request:
+          unknown: 'В запросе отсутствует обязательный параметр, указано неподдерживаемое значение или запрос составлен неверно.'
+          missing_param: 'Отсутствует обязательный параметр: %{value}.'
+          request_not_authorized: 'Запрос должен быть авторизован. Параметр авторизации отсутствует или неверен.'
+          invalid_code_challenge: 'Требуется code challenge.'
+        invalid_redirect_uri: 'Redirect URI неверен или не совпадает с URI клиента.'
+        unauthorized_client: 'Клиент не авторизован для этого метода запроса.'
+        access_denied: 'Владелец ресурса или сервер авторизации отклонил запрос.'
+        invalid_scope: 'Указанный scope неверен, неизвестен или имеет неверный формат.'
+        invalid_code_challenge_method:
+          zero: 'Сервер не поддерживает PKCE: нет допустимых code_challenge_method.'
+          one: 'code_challenge_method должен быть %{challenge_methods}.'
+          other: 'code_challenge_method должен быть одним из: %{challenge_methods}.'
+        server_error: 'На сервере авторизации произошла непредвиденная ошибка.'
+        temporarily_unavailable: 'Сервер авторизации временно перегружен или на обслуживании.'
+
+        credential_flow_not_configured: 'Resource Owner Password Credentials не настроен (Doorkeeper.configure.resource_owner_from_credentials).'
+        resource_owner_authenticator_not_configured: 'Поиск владельца ресурса не настроен (Doorkeeper.configure.resource_owner_authenticator).'
+        admin_authenticator_not_configured: 'Доступ в админ-панель запрещён: Doorkeeper.configure.admin_authenticator не настроен.'
+
+        unsupported_response_type: 'Сервер не поддерживает этот тип ответа.'
+        unsupported_response_mode: 'Сервер не поддерживает этот режим ответа.'
+
+        invalid_client: 'Ошибка аутентификации клиента: неизвестный клиент, отсутствует аутентификация или неподдерживаемый метод.'
+        invalid_grant: 'Выданный grant неверен, истёк, отозван, не совпадает с redirect URI или выдан другому клиенту.'
+        unsupported_grant_type: 'Тип grant не поддерживается сервером авторизации.'
+
+        invalid_token:
+          revoked: 'Токен доступа отозван'
+          expired: 'Срок действия токена истёк'
+          unknown: 'Токен доступа недействителен'
+        revoke:
+          unauthorized: 'У вас нет прав на отзыв этого токена'
+
+        forbidden_token:
+          missing_scope: 'Доступ к ресурсу требует scope «%{oauth_scopes}».'
+
+    flash:
+      applications:
+        create:
+          notice: 'Приложение создано.'
+        destroy:
+          notice: 'Приложение удалено.'
+        update:
+          notice: 'Приложение обновлено.'
+      authorized_applications:
+        destroy:
+          notice: 'Доступ приложения отозван.'
+
+    layouts:
+      admin:
+        title: 'Doorkeeper'
+        nav:
+          oauth2_provider: 'OAuth2 провайдер'
+          applications: 'Приложения'
+          home: 'Главная'
+      application:
+        title: 'Требуется OAuth-авторизация'

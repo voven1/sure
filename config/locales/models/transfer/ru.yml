@@ -1,0 +1,18 @@
+---
+ru:
+  activerecord:
+    errors:
+      models:
+        transfer:
+          attributes:
+            base:
+              inflow_cannot_be_in_multiple_transfers: Транзакция поступления не может участвовать в нескольких переводах
+              must_be_from_different_accounts: Счета перевода должны различаться
+              must_be_from_same_family: Перевод должен быть в рамках одной семьи
+              must_be_within_date_range: Даты транзакций перевода не должны отличаться более чем на 4 дня
+              must_have_opposite_amounts: Суммы транзакций перевода должны быть противоположными
+              must_have_single_currency: В переводе должна использоваться одна валюта
+              outflow_cannot_be_in_multiple_transfers: Транзакция списания не может участвовать в нескольких переводах
+  transfer:
+    name: Перевод на %{to_account}
+    payment_name: Платёж на %{to_account}

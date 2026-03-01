@@ -1,0 +1,17 @@
+---
+ru:
+  pdf_import_mailer:
+    next_steps:
+      greeting: "Здравствуйте, %{name}!"
+      intro: "Мы обработали PDF-документ, который вы загрузили в %{product}."
+      document_type_label: Тип документа
+      summary_label: ИИ-резюме
+      transactions_note: В документе, похоже, есть транзакции. Их можно извлечь и проверить.
+      document_stored_note: Документ сохранён для справки и может использоваться в диалогах с ИИ.
+      next_steps_label: Что дальше?
+      next_steps_intro: "Варианты:"
+      option_extract_transactions: Извлечь транзакции из выписки
+      option_keep_reference: Оставить документ для использования в диалогах с ИИ
+      option_delete: Удалить импорт, если он больше не нужен
+      view_import_button: Подробности импорта
+      footer_note: Это автоматическое письмо. Пожалуйста, не отвечайте на него напрямую.

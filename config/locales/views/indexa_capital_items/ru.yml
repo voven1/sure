@@ -1,0 +1,107 @@
+---
+ru:
+  indexa_capital_items:
+    sync_status:
+      no_accounts: "Счета не найдены"
+      synced:
+        one: "%{count} счёт синхронизирован"
+        other: "%{count} счетов синхронизировано"
+      synced_with_setup: "%{linked} синхронизировано, %{unlinked} требуют настройки"
+    institution_summary:
+      none: "Нет подключённых учреждений"
+      count:
+        one: "%{count} учреждение"
+        other: "%{count} учреждений"
+    errors:
+      provider_not_configured: "Провайдер IndexaCapital не настроен"
+    sync:
+      status:
+        importing: "Импорт счетов из IndexaCapital…"
+        processing: "Обработка позиций и операций…"
+        calculating: "Расчёт балансов…"
+        importing_data: "Импорт данных счетов…"
+        checking_setup: "Проверка конфигурации счетов…"
+        needs_setup: "%{count} счетов требуют настройки…"
+      success: "Синхронизация запущена"
+    panel:
+      setup_instructions: "Инструкции:"
+      step_1: "В панели Indexa Capital создайте read-only API токен"
+      step_2: "Вставьте API токен ниже и нажмите «Сохранить»"
+      step_3: "После успешного подключения перейдите на вкладку «Счета» для настройки новых счетов"
+      field_descriptions: "Описание полей:"
+      optional: "(необяз.)"
+      required: "(обяз.)"
+      optional_with_default: "(необяз., по умолчанию %{default_value})"
+      alternative_auth: "Или используйте аутентификацию по логину/паролю…"
+      save_button: "Сохранить настройки"
+      update_button: "Обновить настройки"
+      status_configured_html: "Настроено. Перейдите на вкладку <a href=\"%{accounts_path}\" class=\"link\">Счета</a> для управления."
+      status_not_configured: "Не настроено"
+      fields:
+        api_token:
+          label: "API токен"
+          description: "Read-only API токен из панели Indexa Capital"
+          placeholder_new: "Вставьте API токен"
+          placeholder_update: "Введите новый API токен для обновления"
+        username:
+          label: "Имя пользователя"
+          description: "Логин/email Indexa Capital"
+          placeholder_new: "Вставьте имя пользователя"
+          placeholder_update: "Введите новое имя для обновления"
+        document:
+          label: "ID документа"
+          description: "Документ/ID Indexa Capital"
+          placeholder_new: "Вставьте ID документа"
+          placeholder_update: "Введите новый ID для обновления"
+        password:
+          label: "Пароль"
+          description: "Пароль Indexa Capital"
+          placeholder_new: "Вставьте пароль"
+          placeholder_update: "Введите новый пароль для обновления"
+    create:
+      success: "Подключение IndexaCapital создано"
+    update:
+      success: "Подключение IndexaCapital обновлено"
+    destroy:
+      success: "Подключение IndexaCapital удалено"
+    index:
+      title: "Подключения IndexaCapital"
+    loading:
+      loading_message: "Загрузка счетов IndexaCapital…"
+      loading_title: "Загрузка"
+    link_accounts:
+      all_already_linked:
+        one: "Выбранный счёт (%{names}) уже связан"
+        other: "Все %{count} выбранных счетов уже связаны: %{names}"
+      api_error: "Ошибка API: %{message}"
+      invalid_account_names:
+        one: "Нельзя связать счёт с пустым именем"
+        other: "Нельзя связать %{count} счетов с пустыми именами"
+      link_failed: "Не удалось связать счета"
+      no_accounts_selected: "Выберите хотя бы один счёт"
+      no_api_key: "Учётные данные IndexaCapital не найдены. Настройте в разделе «Провайдеры»."
+      partial_invalid: "Связано %{created_count} счёт(ов), %{already_linked_count} уже были связаны, %{invalid_count} с неверными именами"
+      partial_success: "Связано %{created_count} счёт(ов). Уже были связаны: %{already_linked_count} — %{already_linked_names}"
+      success:
+        one: "Успешно связано счетов: %{count}"
+        other: "Успешно связано счетов: %{count}"
+    indexa_capital_item:
+      accounts_need_setup: "Счета требуют настройки"
+      delete: "Удалить подключение"
+      deletion_in_progress: "удаление…"
+      error: "Ошибка"
+      more_accounts_available:
+        one: "Ещё %{count} счёт доступен"
+        other: "Ещё %{count} счетов доступно"
+      no_accounts_description: "У этого подключения пока нет связанных счетов."
+      no_accounts_title: "Нет счетов"
+      provider_name: "IndexaCapital"
+      requires_update: "Требуется обновление подключения"
+      setup_action: "Настроить новые счета"
+      setup_description: "Связано %{linked} из %{total}. Выберите типы для импортированных счетов IndexaCapital."
+      setup_needed: "Новые счета готовы к настройке"
+      status: "Синхронизировано %{timestamp} назад — %{summary}"
+      status_never: "Ни разу не синхронизировалось"
+      syncing: "Синхронизация…"
+      total: "Всего"
+      unlinked: "Не связаны"

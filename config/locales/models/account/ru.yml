@@ -1,0 +1,21 @@
+---
+ru:
+  activerecord:
+    attributes:
+      account:
+        balance: Баланс
+        currency: Валюта
+        family: "%{moniker}"
+        family_id: "%{moniker}"
+        name: Название
+        subtype: Подтип
+    models:
+      account: Счёт
+      account/credit: Кредитная карта
+      account/depository: Банковский счёт
+      account/investment: Инвестиции
+      account/loan: Кредит
+      account/other_asset: Другой актив
+      account/other_liability: Другое обязательство
+      account/property: Недвижимость
+      account/vehicle: Транспорт

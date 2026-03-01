@@ -1,0 +1,30 @@
+---
+ru:
+  transfers:
+    create:
+      success: Перевод создан
+    destroy:
+      success: Перевод удалён
+    form:
+      amount: Сумма
+      date: Дата
+      expense: Расход
+      from: Со счёта
+      income: Доход
+      select_account: Выберите счёт
+      submit: Создать перевод
+      to: На счёт
+      transfer: Перевод
+    new:
+      title: Новый перевод
+    show:
+      delete: Удалить перевод
+      delete_subtitle: Удаляется только перевод. Исходные транзакции не удаляются.
+      delete_title: Удалить перевод?
+      details: Детали
+      note_label: Заметки
+      note_placeholder: Добавить заметку к переводу
+      overview: Обзор
+      settings: Настройки
+    update:
+      success: Перевод обновлён

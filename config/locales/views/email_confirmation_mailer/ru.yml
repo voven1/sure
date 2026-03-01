@@ -1,0 +1,9 @@
+---
+ru:
+  email_confirmation_mailer:
+    confirmation_email:
+      body: Вы запросили смену email. Нажмите кнопку ниже, чтобы подтвердить изменение.
+      cta: Подтвердить смену email
+      expiry_notice: Ссылка действительна %{hours} ч.
+      greeting: Здравствуйте!
+      subject: '%{product_name}: Подтвердите смену email'

@@ -1,0 +1,177 @@
+---
+ru:
+  views:
+    settings:
+      payments:
+        renewal: "Ваш взнос продолжается с %{date}."
+        cancellation: "Ваш взнос заканчивается %{date}."
+  settings:
+    ai_prompts:
+      show:
+        page_title: AI-подсказки
+        openai_label: OpenAI
+        disable_ai: Отключить AI-ассистента
+        prompt_instructions: Инструкции для подсказок
+        main_system_prompt:
+          title: Основной системный промпт
+          subtitle: Базовые инструкции, определяющие поведение AI-ассистента во всех чатах
+        transaction_categorizer:
+          title: Категоризатор транзакций
+          subtitle: AI автоматически категоризирует транзакции по вашим категориям
+        merchant_detector:
+          title: Определение продавца
+          subtitle: AI определяет и дополняет данные транзакций информацией о продавце
+    payments:
+      show:
+        page_title: Платежи
+        subscription_subtitle: Обновите данные банковской карты
+        subscription_title: Управление взносами
+    preferences:
+      show:
+        country: Страна
+        currency: Валюта
+        date_format: Формат даты
+        general_subtitle: Настройте свои предпочтения
+        general_title: Общие
+        default_period: Период по умолчанию
+        default_account_order: Порядок счетов по умолчанию
+        language: Язык
+        language_auto: Язык браузера
+        page_title: Настройки
+        theme_dark: Тёмная
+        theme_light: Светлая
+        theme_subtitle: Выберите тему оформления приложения
+        theme_system: Системная
+        theme_title: Тема
+        timezone: Часовой пояс
+        month_start_day: Бюджетный месяц начинается
+        month_start_day_hint: Укажите, с какого дня начинается ваш бюджетный месяц (например, день зарплаты)
+        month_start_day_warning: Бюджеты и расчёты MTD будут использовать этот день вместо 1-го числа каждого месяца.
+    profiles:
+      destroy:
+        cannot_remove_self: Вы не можете удалить себя из аккаунта.
+        member_removal_failed: Не удалось удалить участника.
+        member_removed: Участник успешно удалён.
+        not_authorized: У вас нет прав на удаление участников.
+      show:
+        confirm_delete:
+          body: Вы уверены, что хотите безвозвратно удалить свой аккаунт? Это действие необратимо.
+          title: Удалить аккаунт?
+        confirm_reset:
+          body: Вы уверены, что хотите сбросить аккаунт? Будут удалены все счета, категории, продавцы, теги и другие данные. Это действие нельзя отменить.
+          title: Сбросить аккаунт?
+        confirm_reset_with_sample_data:
+          body: Вы уверены, что хотите сбросить аккаунт и загрузить демо-данные? Текущие данные будут удалены и заменены демонстрационными.
+          title: Сбросить аккаунт и загрузить демо-данные?
+        confirm_remove_invitation:
+          body: Вы уверены, что хотите отменить приглашение для %{email}?
+          title: Отменить приглашение
+        confirm_remove_member:
+          body: Вы уверены, что хотите удалить %{name} из аккаунта?
+          title: Удалить участника
+        danger_zone_title: Опасная зона
+        delete_account: Удалить аккаунт
+        delete_account_warning: Удаление аккаунта безвозвратно удалит все ваши данные.
+        reset_account: Сбросить аккаунт
+        reset_account_warning: Сброс аккаунта удалит все счета, категории, продавцов, теги и другие данные, но сохранит учётную запись пользователя.
+        reset_account_with_sample_data: Сбросить и загрузить демо
+        reset_account_with_sample_data_warning: Удалить все текущие данные и загрузить демонстрационные данные для ознакомления с приложением.
+        email: Email
+        first_name: Имя
+        group_form_input_placeholder: Введите название группы
+        group_form_label: Название группы
+        group_title: Участники группы
+        household_form_input_placeholder: Введите название домохозяйства
+        household_form_label: Название домохозяйства
+        household_subtitle: Приглашённые могут войти в ваш аккаунт %{moniker} и использовать общие ресурсы.
+        household_title: Домохозяйство
+        invitation_link: Ссылка-приглашение
+        invite_member: Добавить участника
+        last_name: Фамилия
+        page_title: Профиль
+        pending: Ожидает
+        profile_subtitle: Настройте отображение в %{product_name}
+        profile_title: Личное
+        remove_invitation: Отменить приглашение
+        remove_member: Удалить участника
+        save: Сохранить
+        unconfirmed_email_html: "Вы запросили смену email на %{unconfirmed_email}. Перейдите в почту и подтвердите изменение. Если письма нет, проверьте папку «Спам» или %{resend_link}."
+        request_new_confirmation: запросить новое письмо с подтверждением
+    securities:
+      show:
+        page_title: Безопасность
+        mfa_title: Двухфакторная аутентификация
+        mfa_description: Добавьте дополнительную защиту, требуя код из приложения-аутентификатора при входе
+        enable_mfa: Включить 2FA
+        disable_mfa: Отключить 2FA
+        disable_mfa_confirm: Вы уверены, что хотите отключить двухфакторную аутентификацию?
+        sso_title: Подключённые аккаунты
+        sso_subtitle: Управление подключениями единого входа
+        sso_disconnect: Отключить
+        sso_last_used: Последнее использование
+        sso_never: Никогда
+        sso_no_email: Нет email
+        sso_no_identities: Нет подключённых SSO-аккаунтов
+        sso_connect_hint: Выйдите и войдите через SSO-провайдера, чтобы подключить аккаунт.
+        sso_confirm_title: Отключить аккаунт?
+        sso_confirm_body: Вы уверены, что хотите отключить аккаунт %{provider}? Вы сможете подключить его снова, войдя через этого провайдера.
+        sso_confirm_button: Отключить
+        sso_warning_message: Это ваш единственный способ входа. Установите пароль в настройках безопасности перед отключением, иначе вы можете потерять доступ к аккаунту.
+    settings_nav:
+      accounts_label: Счета
+      advanced_section_title: Дополнительно
+      ai_prompts_label: AI-подсказки
+      api_key_label: API-ключ
+      payment_label: Платежи
+      categories_label: Категории
+      feedback_label: Обратная связь
+      general_section_title: Общие
+      imports_label: Импорт
+      exports_label: Экспорт
+      logout: Выйти
+      merchants_label: Продавцы
+      guides_label: Руководства
+      other_section_title: Ещё
+      preferences_label: Настройки
+      profile_label: Профиль
+      recurring_transactions_label: Регулярные
+      rules_label: Правила
+      security_label: Безопасность
+      self_hosting_label: Self-Hosting
+      tags_label: Теги
+      transactions_section_title: Транзакции
+      whats_new_label: Что нового
+      api_keys_label: API-ключ
+      bank_sync_label: Синхронизация банка
+    settings_nav_link_large:
+      next: Далее
+      previous: Назад
+    user_avatar_field:
+      accepted_formats: JPG или PNG. Макс. 5 МБ.
+      choose: Загрузить фото
+      choose_label: (необязательно)
+      change: Сменить фото
+    providers:
+      show:
+        coinbase_title: Coinbase
+      encryption_error:
+        title: Требуется настройка шифрования
+        message: Ключи шифрования Active Record не настроены. Укажите учётные данные (active_record_encryption.primary_key, active_record_encryption.deterministic_key, active_record_encryption.key_derivation_salt) в Rails credentials или переменных окружения перед использованием провайдеров синхронизации.
+      coinbase_panel:
+        setup_instructions: "Чтобы подключить Coinbase:"
+        step1_html: "Перейдите в <a href=\"https://portal.cdp.coinbase.com/projects/api-keys\" target=\"_blank\" class=\"text-primary underline\">настройки API Coinbase</a>"
+        step2: Создайте новый API-ключ с правами только на чтение (просмотр счетов и транзакций)
+        step3: Скопируйте API-ключ и секрет и вставьте ниже
+        api_key_label: API-ключ
+        api_key_placeholder: Введите API-ключ Coinbase
+        api_secret_label: API-секрет
+        api_secret_placeholder: Введите API-секрет Coinbase
+        connect_button: Подключить Coinbase
+        syncing: Синхронизация…
+        sync: Синхронизировать
+        disconnect_confirm: Отключить подключение Coinbase? Синхронизированные счета станут ручными.
+        status_connected: Coinbase подключён и синхронизирует криптоактивы.
+        status_not_connected: Не подключено. Введите учётные данные API выше.
+      enable_banking_panel:
+        callback_url_instruction: "Для URL обратного вызова используйте %{callback_url}."
+        connection_error: Ошибка подключения

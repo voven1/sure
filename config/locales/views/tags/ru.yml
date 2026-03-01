@@ -1,0 +1,23 @@
+---
+ru:
+  tags:
+    create:
+      created: Тег создан
+      error: 'Ошибка создания тега: %{error}'
+    destroy:
+      deleted: Тег удалён
+    edit:
+      edit: Изменить тег
+    form:
+      placeholder: Название тега
+    index:
+      empty: Пока нет тегов
+      new: Новый тег
+      tags: Теги
+    new:
+      new: Новый тег
+    tag:
+      delete: Удалить
+      edit: Изменить
+    update:
+      updated: Тег обновлён

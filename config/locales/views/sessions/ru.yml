@@ -1,0 +1,33 @@
+---
+ru:
+  sessions:
+    create:
+      invalid_credentials: Неверный email или пароль.
+      local_login_disabled: Вход по паролю отключён. Используйте единый вход (SSO).
+    destroy:
+      logout_successful: Вы успешно вышли.
+    post_logout:
+      logout_successful: Вы успешно вышли.
+    openid_connect:
+      account_linked: "Аккаунт успешно связан с %{provider}"
+      failed: Не удалось войти через OpenID Connect.
+    failure:
+      failed: Не удалось войти.
+      sso_provider_unavailable: "Сервис единого входа временно недоступен. Попробуйте позже или обратитесь к администратору."
+      sso_invalid_response: "Получен неверный ответ от сервиса входа. Попробуйте снова."
+      sso_failed: "Вход через единый вход не удался. Попробуйте снова."
+    new:
+      email: Email
+      email_placeholder: you@example.com
+      forgot_password: Забыли пароль?
+      password: Пароль
+      submit: Войти
+      title: Sure
+      password_placeholder: Введите пароль
+      openid_connect: Войти через OpenID Connect
+      oidc: Войти через OpenID Connect
+      google_auth_connect: Войти через Google
+      local_login_admin_only: Вход по паролю разрешён только администраторам.
+      no_auth_methods_enabled: Способы входа не настроены. Обратитесь к администратору.
+      demo_banner_title: "Демо-режим"
+      demo_banner_message: "Это демонстрационная среда. Учётные данные подставлены для удобства. Не вводите реальные или конфиденциальные данные."

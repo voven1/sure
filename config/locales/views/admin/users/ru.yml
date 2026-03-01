@@ -1,0 +1,45 @@
+---
+ru:
+  admin:
+    users:
+      index:
+        title: "Управление пользователями"
+        description: "Управление ролями пользователей. Суперадмины имеют доступ к настройкам SSO и управлению пользователями."
+        section_title: "Пользователи"
+        you: "(Вы)"
+        trial_ends_at: "Пробный период до"
+        not_available: "н/д"
+        no_users: "Пользователи не найдены."
+        filters:
+          role: "Роль"
+          role_all: "Все роли"
+          trial_status: "Пробный период"
+          trial_all: "Все"
+          trial_expiring_soon: "Истекает через 7 дней"
+          trial_trialing: "На пробном периоде"
+          submit: "Фильтр"
+        summary:
+          trials_expiring_7_days: "Пробные периоды истекают в ближайшие 7 дней"
+        table:
+          user: "Пользователь"
+          trial_ends_at: "Пробный период до"
+          family_accounts: "Счета семьи"
+          family_transactions: "Транзакции семьи"
+          last_login: "Последний вход"
+          session_count: "Сессий"
+          never: "Никогда"
+          role: "Роль"
+        role_descriptions_title: "Описание ролей"
+        roles:
+          guest: "Гость"
+          member: "Участник"
+          admin: "Администратор"
+          super_admin: "Суперадмин"
+        role_descriptions:
+          guest: "Ограниченные права для вводных сценариев."
+          member: "Базовый доступ. Управление своими счетами, транзакциями и настройками."
+          admin: "Администратор семьи. Доступ к API-ключам, импорту, AI-подсказкам."
+          super_admin: "Администратор экземпляра. Управление SSO, ролями и входом от имени пользователей."
+      update:
+        success: "Роль пользователя обновлена."
+        failure: "Не удалось обновить роль."
