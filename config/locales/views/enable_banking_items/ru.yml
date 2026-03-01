@@ -1,0 +1,49 @@
+---
+ru:
+  enable_banking_items:
+    authorize:
+      authorization_failed: Не удалось начать авторизацию
+      bank_required: Выберите банк.
+      invalid_redirect: Получен неверный URL авторизации. Попробуйте снова.
+      redirect_uri_not_allowed: Редирект не разрешён. Настройте `%{callback_url}` в настройках приложения Enable Banking.
+      unexpected_error: Произошла ошибка. Попробуйте снова.
+    callback:
+      authorization_error: Ошибка авторизации
+      invalid_callback: Неверные параметры callback.
+      item_not_found: Подключение не найдено.
+      session_failed: Не удалось завершить авторизацию
+      success: Банк успешно подключён. Счета синхронизируются.
+      unexpected_error: Произошла ошибка. Попробуйте снова.
+    complete_account_setup:
+      all_skipped: Все счета пропущены. Настроить их можно позже на странице счетов.
+      no_accounts: Нет счетов для настройки.
+      success: "Успешно создано счетов: %{count}!"
+    create:
+      success: Enable Banking настроен.
+    destroy:
+      success: Подключение Enable Banking поставлено в очередь на удаление.
+    link_accounts:
+      already_linked: Выбранные счета уже связаны.
+      link_failed: Не удалось связать счета
+      no_accounts_selected: Счета не выбраны.
+      no_session: Нет активного подключения Enable Banking. Сначала подключите банк.
+      success: "Успешно связано счетов: %{count}."
+    link_existing_account:
+      success: Счёт успешно связан с Enable Banking
+      errors:
+        only_manual: Связать можно только ручные счета
+        invalid_enable_banking_account: Выбран неверный счёт Enable Banking
+    new:
+      link_enable_banking_title: Подключить Enable Banking
+    reauthorize:
+      invalid_redirect: Неверный URL авторизации. Попробуйте снова.
+      reauthorization_failed: Ошибка повторной авторизации
+    select_bank:
+      cancel: Отмена
+      check_country: Проверьте настройки кода страны.
+      credentials_required: Сначала настройте учётные данные Enable Banking.
+      description: Выберите банк для подключения к вашим счетам.
+      no_banks: Нет доступных банков для этой страны/региона.
+      title: Выберите банк
+    update:
+      success: Настройки Enable Banking обновлены.

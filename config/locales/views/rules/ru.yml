@@ -1,0 +1,52 @@
+---
+ru:
+  rules:
+    no_action: Без действия
+    no_condition: Без условия
+    actions:
+      value_placeholder: Введите значение
+    apply_all:
+      button: Применить все
+      confirm_title: Применить все правила
+      confirm_message: "Будет применено правил: %{count}, затронуто транзакций: %{transactions}. Продолжить?"
+      confirm_button: Подтвердить и применить
+      success: Все правила поставлены в очередь на выполнение
+      ai_cost_title: Оценка затрат на ИИ
+      ai_cost_message: ИИ обработает до %{transactions} транзакций.
+      estimated_cost: "Примерная стоимость: ~$%{cost}"
+      cost_unavailable_model: Оценка стоимости недоступна для модели «%{model}».
+      cost_unavailable_no_provider: Оценка недоступна (LLM-провайдер не настроен).
+      cost_warning: Возможны расходы — уточните актуальные цены у провайдера модели.
+      view_usage: История использования
+    recent_runs:
+      title: Последние запуски
+      description: "История выполнения правил: статус и количество транзакций."
+      unnamed_rule: Безымянное правило
+      columns:
+        date_time: Дата и время
+        execution_type: Тип
+        status: Статус
+        rule_name: Правило
+        transactions_counts:
+          queued: В очереди
+          processed: Обработано
+          modified: Изменено
+      execution_types:
+        manual: Вручную
+        scheduled: По расписанию
+      statuses:
+        pending: Ожидает
+        success: Успешно
+        failed: Ошибка
+    clear_ai_cache:
+      button: Сбросить кэш ИИ
+      confirm_title: Сбросить кэш ИИ?
+      confirm_body: ИИ заново обработает все транзакции. Это может привести к дополнительным расходам на API.
+      confirm_button: Сбросить кэш
+      success: Кэш ИИ очищается. Это может занять несколько минут.
+    condition_filters:
+      transaction_type:
+        income: Доход
+        expense: Расход
+        transfer: Перевод
+        equal_to: Равно

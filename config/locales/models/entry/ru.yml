@@ -1,0 +1,9 @@
+---
+ru:
+  activerecord:
+    errors:
+      models:
+        entry:
+          attributes:
+            base:
+              invalid_sell_quantity: нельзя продать %{sell_qty} шт. %{ticker}, у вас только %{current_qty} шт.

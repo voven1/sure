@@ -1,0 +1,20 @@
+---
+ru:
+  cryptos:
+    edit:
+      edit: Изменить %{account}
+    form:
+      subtype_label: Тип счёта
+      subtype_prompt: Выберите тип...
+      subtype_none: Не указан
+      tax_treatment_label: Налогообложение
+      tax_treatment_hint: Большинство криптоактивов учитываются как налогооблагаемые. Выберите другой вариант для льготного счёта (например, самоуправляемый IRA).
+    new:
+      title: Ввести баланс счёта
+    subtypes:
+      wallet:
+        short: Кошелёк
+        long: Криптокошелёк
+      exchange:
+        short: Биржа
+        long: Криптобиржа

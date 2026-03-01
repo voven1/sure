@@ -1,0 +1,32 @@
+---
+ru:
+  properties:
+    edit:
+      edit: Изменить %{account}
+    form:
+      address_line1: Улица, дом
+      address_line1_placeholder: ул. Примерная, 1
+      area: Площадь
+      area_placeholder: '2000'
+      area_unit: Единица измерения
+      country: Страна
+      country_placeholder: RU
+      locality: Город
+      locality_placeholder: Москва
+      none: Нет
+      postal_code: Индекс
+      postal_code_placeholder: '101000'
+      region: Регион
+      region_placeholder: МО
+      subtype_prompt: Выберите тип недвижимости
+      year_built: Год постройки
+      year_built_placeholder: '2000'
+    new:
+      title: Ввести данные по недвижимости
+    overview:
+      living_area: Площадь
+      market_value: Рыночная стоимость
+      purchase_price: Цена покупки
+      trend: Динамика
+      unknown: Неизвестно
+      year_built: Год постройки

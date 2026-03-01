@@ -1,0 +1,107 @@
+---
+ru:
+  simplefin_items:
+    new:
+      title: Подключить SimpleFIN
+      setup_token: Токен настройки
+      setup_token_placeholder: вставьте токен SimpleFIN
+      connect: Подключить
+      cancel: Отмена
+    create:
+      success: SimpleFIN подключён! Счета появятся после синхронизации.
+      errors:
+        blank_token: Введите токен настройки SimpleFIN.
+        invalid_token: Неверный токен. Проверьте, что скопировали полный токен из SimpleFIN Bridge.
+        token_compromised: Токен мог быть скомпрометирован, истёк или уже использован. Создайте новый.
+        create_failed: "Ошибка подключения: %{message}"
+        unexpected: Произошла ошибка. Попробуйте снова.
+    destroy:
+      success: Подключение SimpleFIN будет удалено
+    update:
+      success: Подключение SimpleFIN обновлено. Счета переподключаются.
+      errors:
+        blank_token: Введите токен настройки SimpleFIN.
+        invalid_token: Неверный токен. Проверьте полный токен из SimpleFIN Bridge.
+        token_compromised: Токен мог быть скомпрометирован или истёк. Создайте новый.
+        update_failed: "Ошибка обновления: %{message}"
+        unexpected: Произошла ошибка. Попробуйте снова.
+    edit:
+      setup_token:
+        label: "Токен настройки SimpleFIN:"
+        placeholder: "Вставьте токен сюда..."
+        help_text: "Длинная строка из букв и цифр"
+    setup_accounts:
+      stale_accounts:
+        title: "Счета больше не в SimpleFIN"
+        description: "Эти счета есть в базе, но SimpleFIN их больше не отдаёт. Возможно, конфигурация изменилась."
+        action_prompt: "Что сделать?"
+        action_delete: "Удалить счёт и все транзакции"
+        action_move: "Перенести транзакции в:"
+        action_skip: "Пропустить"
+        transaction_count:
+          one: "%{count} транзакция"
+          other: "%{count} транзакций"
+    complete_account_setup:
+      all_skipped: "Все счета пропущены. Ни один не создан."
+      no_accounts: "Нет счетов для настройки."
+      success:
+        one: "Создан счёт SimpleFIN: %{count}. Транзакции и позиции импортируются в фоне."
+        other: "Создано счетов SimpleFIN: %{count}. Транзакции и позиции импортируются в фоне."
+      stale_accounts_processed: "Устаревшие счета: удалено %{deleted}, перенесено %{moved}."
+      stale_accounts_errors:
+        one: "Ошибка обработки %{count} устаревшего счёта. См. логи."
+        other: "Ошибки обработки %{count} устаревших счетов. См. логи."
+    simplefin_item:
+      add_new: Добавить подключение
+      confirm_accept: Удалить подключение
+      confirm_body: Будут безвозвратно удалены все счета этой группы и связанные данные.
+      confirm_title: Удалить подключение SimpleFIN?
+      delete: Удалить
+      deletion_in_progress: "(удаление…)"
+      error: Ошибка при синхронизации
+      no_accounts_description: У этого подключения пока нет синхронизированных счетов.
+      no_accounts_title: Счета не найдены
+      requires_update: Переподключить
+      setup_needed: Новые счета готовы к настройке
+      setup_description: Выберите типы для импортированных счетов SimpleFIN.
+      setup_action: Настроить новые счета
+      setup_accounts_menu: Настроить счета
+      more_accounts_available:
+        one: "Ещё %{count} счёт можно настроить"
+        other: "Ещё %{count} счетов можно настроить"
+      accounts_skipped_tooltip: "Часть счетов пропущена из-за ошибок синхронизации"
+      accounts_skipped_label: "Пропущено: %{count}"
+      rate_limited_ago: "Лимит запросов (%{time} назад)"
+      rate_limited_recently: "Лимит запросов недавно"
+      status: Синхронизировано %{timestamp} назад
+      status_never: Ни разу не синхронизировалось
+      status_with_summary: "Синхронизировано %{timestamp} назад • %{summary}"
+      syncing: Синхронизация…
+      update: Обновить
+      stale_pending_note: "(исключено из бюджетов)"
+      stale_pending_accounts: "в: %{accounts}"
+      reconciled_details_note: "(подробности в итогах синхронизации)"
+      duplicate_accounts_skipped: "Часть счетов пропущена как дубликаты — используйте «Подключить существующий счёт» для слияния."
+    select_existing_account:
+      title: "Подключить %{account_name} к SimpleFIN"
+      description: Выберите счёт SimpleFIN для связи с вашим счётом
+      cancel: Отмена
+      link_account: Подключить счёт
+      no_accounts_found: "Нет счетов SimpleFIN для этого %{moniker}."
+      wait_for_sync: Если вы только что подключили или синхронизировали, повторите после завершения синхронизации.
+      unlink_to_move: Чтобы переназначить связь, сначала отвяжите счёт в меню действий счёта.
+      all_accounts_already_linked: Все счета SimpleFIN уже связаны.
+      currently_linked_to: "Сейчас связан с: %{account_name}"
+    link_existing_account:
+      success: Счёт успешно связан с SimpleFIN
+      errors:
+        only_manual: Связать можно только ручные счета
+        invalid_simplefin_account: Выбран неверный счёт SimpleFIN
+    reconciled_status:
+      message:
+        one: "%{count} дубликат ожидающей транзакции сверен"
+        other: "%{count} дубликатов ожидающих транзакций сверено"
+    stale_pending_status:
+      message:
+        one: "%{count} ожидающая транзакция старше %{days} дн."
+        other: "%{count} ожидающих транзакций старше %{days} дн."

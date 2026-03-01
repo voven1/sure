@@ -1,0 +1,146 @@
+---
+ru:
+  accounts:
+    account:
+      link_lunchflow: Подключить Lunch Flow
+      link_provider: Подключить провайдера
+      unlink_provider: Отключить от провайдера
+      troubleshoot: Устранение неполадок
+    chart:
+      data_not_available: Нет данных за выбранный период
+    create:
+      success: "Счёт %{type} создан"
+    destroy:
+      success: "Счёт %{type} запланирован к удалению"
+      cannot_delete_linked: "Подключённый счёт нельзя удалить. Сначала отключите его от провайдера."
+    empty:
+      empty_message: "Добавьте счёт: через подключение, импорт или вручную."
+      new_account: Новый счёт
+      no_accounts: Пока нет счетов
+    form:
+      balance: Текущий баланс
+      name_label: Название счёта
+      name_placeholder: Например, Основной счёт
+      additional_details: Дополнительно
+      institution_name_label: Название учреждения
+      institution_name_placeholder: напр., Сбербанк
+      institution_domain_label: Домен учреждения
+      institution_domain_placeholder: напр., sberbank.ru
+      notes_label: Заметки
+      notes_placeholder: Номер счёта, БИК, ИНН, маршрут и т.д.
+    index:
+      accounts: Счета
+      manual_accounts:
+        other_accounts: Другие счета
+      new_account: Новый счёт
+      sync: Синхронизировать все
+    sync_all:
+      syncing: "Синхронизация счетов…"
+    new:
+      import_accounts: Импорт счетов
+      method_selector:
+        connected_entry: Подключить счёт
+        connected_entry_eu: Подключить счёт (ЕС)
+        link_with_provider: "Подключить через %{provider}"
+        lunchflow_entry: Подключить Lunch Flow
+        manual_entry: Ввести баланс вручную
+        title: Как добавить счёт?
+      title: Что хотите добавить?
+    show:
+      activity:
+        amount: Сумма
+        balance: Баланс
+        confirmed: Проведено
+        date: Дата
+        entries: записей
+        entry: запись
+        filter: Фильтр
+        new: Новое
+        new_activity: Новая операция
+        new_balance: Новый баланс
+        new_trade: Новая сделка
+        new_transaction: Новая транзакция
+        new_transfer: Новый перевод
+        no_entries: Записей не найдено
+        pending: Ожидает
+        search:
+          placeholder: Поиск по названию
+        status: Статус
+        title: Активность
+      chart:
+        balance: Баланс
+        owed: Долг
+      menu:
+        confirm_accept: Удалить «%{name}»
+        confirm_body_html: "<p>При удалении счёта будет удалена история его стоимости, что повлияет на расчёты и графики.</p><br /><p>Восстановить данные будет нельзя — счёт придётся добавлять заново.</p>"
+        confirm_title: Удалить счёт?
+        edit: Изменить
+        import: Импорт транзакций
+        import_trades: Импорт сделок
+        import_transactions: Импорт транзакций
+        manage: Управление счетами
+    update:
+      success: "Счёт %{type} обновлён"
+    sidebar:
+      missing_data: Нет исторических данных
+      missing_data_description: "%{product} получает курсы валют, цены бумаг и др. от сторонних провайдеров. Эти данные нужны для корректных исторических балансов."
+      configure_providers: Настройте провайдеров здесь.
+      tabs:
+        all: Все
+        assets: Активы
+        debts: Долги
+      new_asset: Новый актив
+      new_debt: Новый долг
+      new_account: Новый счёт
+      new_account_group: "Новая группа: %{account_group}"
+    types:
+      depository: Наличные
+      investment: Инвестиции
+      crypto: Криптовалюта
+      property: Недвижимость
+      vehicle: Транспорт
+      other_asset: Другой актив
+      credit_card: Кредитная карта
+      loan: Кредит
+      other_liability: Другое обязательство
+    tax_treatments:
+      taxable: Налогооблагаемый
+      tax_deferred: С отложенным налогом
+      tax_exempt: Налогосвободный
+      tax_advantaged: Льготное налогообложение
+    tax_treatment_descriptions:
+      taxable: Налог при реализации
+      tax_deferred: Взносы вычитаются, налог при выводе
+      tax_exempt: Взносы после налога, доход не облагается
+      tax_advantaged: Специальные налоговые условия
+    subtype_regions:
+      us: США
+      uk: Великобритания
+      ca: Канада
+      au: Австралия
+      eu: Европа
+      generic: Общий
+    confirm_unlink:
+      title: Отключить счёт от провайдера?
+      description_html: "Счёт <strong>%{account_name}</strong> будет отключён от <strong>%{provider_name}</strong> и станет ручным."
+      warning_title: Что это значит
+      warning_no_sync: Счёт больше не будет автоматически синхронизироваться
+      warning_manual_updates: Транзакции и балансы нужно будет вносить вручную
+      warning_transactions_kept: Все текущие транзакции и балансы сохранятся
+      warning_can_delete: После отключения счёт можно будет удалить при необходимости
+      confirm_button: Отключить
+    unlink:
+      success: "Счёт отключён и переведён в ручной режим."
+      not_linked: "Счёт не подключён к провайдеру"
+      error: "Не удалось отключить счёт: %{error}"
+      generic_error: "Произошла ошибка. Попробуйте снова."
+    select_provider:
+      title: Выберите провайдера для подключения
+      description: "Выберите провайдера для счёта %{account_name}"
+      already_linked: "Счёт уже подключён к провайдеру"
+      no_providers: "Провайдеры не настроены"
+
+  email_confirmations:
+    new:
+      invalid_token: Недействительная или устаревшая ссылка подтверждения.
+      success_login: Email подтверждён. Войдите, используя новый адрес.

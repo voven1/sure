@@ -1,0 +1,15 @@
+---
+ru:
+  impersonation_sessions:
+    approve:
+      success: Запрос одобрен
+    complete:
+      success: Сессия завершена
+    create:
+      success: Запрос отправлен пользователю. Ожидание одобрения.
+    join:
+      success: Подключение к сессии
+    leave:
+      success: Выход из сессии
+    reject:
+      success: Запрос отклонён

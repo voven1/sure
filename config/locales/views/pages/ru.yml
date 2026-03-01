@@ -1,0 +1,58 @@
+---
+ru:
+  pages:
+    changelog:
+      title: Что нового
+    privacy:
+      title: Политика конфиденциальности
+      heading: Политика конфиденциальности
+      placeholder: Здесь будет отображаться текст политики конфиденциальности.
+    terms:
+      title: Условия использования
+      heading: Условия использования
+      placeholder: Здесь будет отображаться текст условий использования.
+    dashboard:
+      welcome: "С возвращением, %{name}"
+      subtitle: "Вот что происходит с вашими финансами"
+      new: "Новое"
+      drag_to_reorder: "Перетащите для изменения порядка секции"
+      toggle_section: "Показать или скрыть секцию"
+      net_worth_chart:
+        data_not_available: Нет данных за выбранный период
+        title: Чистые активы
+      no_account_empty_state:
+        new_account: Новый счёт
+        no_account_subtitle: Поскольку счета ещё не добавлены, отображать нечего. Добавьте первые счета, чтобы видеть данные на дашборде.
+        no_account_title: Пока нет счетов
+      balance_sheet:
+        title: "Баланс"
+        no_items: "Пока нет %{name}"
+        add_accounts: "Добавьте счета %{name}, чтобы увидеть полную разбивку"
+      cashflow_sankey:
+        title: "Денежный поток"
+        no_data_title: "Нет данных о денежном потоке за этот период"
+        no_data_description: "Добавьте транзакции или расширьте период, чтобы увидеть данные о денежном потоке"
+        add_transaction: "Добавить транзакцию"
+      no_accounts:
+        title: "Пока нет счетов"
+        description: "Добавьте счета, чтобы отображать данные о чистых активах"
+        add_account: "Добавить счёт"
+      outflows_donut:
+        title: "Расходы"
+        total_outflows: "Всего расходов"
+        categories: "Категории"
+        value: "Сумма"
+        weight: "Доля"
+      investment_summary:
+        title: "Инвестиции"
+        total_return: "Общая доходность"
+        holding: "Актив"
+        weight: "Доля"
+        value: "Стоимость"
+        return: "Доходность"
+        period_activity: "Активность за %{period}"
+        contributions: "Пополнения"
+        withdrawals: "Выводы"
+        trades: "Сделки"
+        no_investments: "Нет инвестиционных счетов"
+        add_investment: "Добавьте инвестиционный счёт, чтобы отслеживать портфель"

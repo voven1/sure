@@ -1,0 +1,8 @@
+---
+ru:
+  password_mailer:
+    password_reset:
+      cta: Сбросить пароль
+      ignore_if_not_requested: Если это были не вы, проигнорируйте это письмо.
+      request_made: Был запрошен сброс пароля %{product_name}. Перейдите по ссылке, чтобы сбросить пароль.
+      subject: '%{product_name}: Сброс пароля'

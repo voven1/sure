@@ -108,6 +108,8 @@ en:
         remove_invitation: Remove Invitation
         remove_member: Remove Member
         save: Save
+        unconfirmed_email_html: "You have requested to change your email to %{unconfirmed_email}. Please go to your email and confirm for the change to take effect. If you haven't received the email, please check your spam folder, or %{resend_link}."
+        request_new_confirmation: request a new confirmation email
     securities:
       show:
         page_title: Security

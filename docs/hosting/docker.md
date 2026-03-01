@@ -246,6 +246,49 @@ docker compose build # This rebuilds the app with updates
 docker compose up --no-deps -d web worker # This restarts the app using the newest version
 ```
 
+## Running with local changes (e.g. custom locales)
+
+The default setup uses a **pre-built image** from GitHub. The container does not use your local files: only the image contents and the `app-storage` volume are used. So:
+
+- Changes to the code (e.g. adding a locale or editing `config/locales/`) on your machine are **not** seen by the app.
+- `docker compose restart` only restarts the same container; it does not rebuild the image or pick up new files.
+
+To run the app with **your** code (e.g. after adding Russian or other customizations), build the image from the repository root:
+
+**Option A — using the override file (from repo root):**
+
+```bash
+cd /path/to/sure   # directory that contains Dockerfile and compose.example.yml
+docker compose -f compose.example.yml -f compose.build-from-source.yml build
+docker compose -f compose.example.yml -f compose.build-from-source.yml up -d
+```
+
+**Option B — edit your compose file:**
+
+In your `compose.yml`, replace the pre-built image with a local build for the `web` and `worker` services. For example, change:
+
+```yaml
+  web:
+    image: ghcr.io/we-promise/sure:stable
+```
+
+to:
+
+```yaml
+  web:
+    build: .
+    image: sure-web:local
+```
+
+Do the same for the `worker` service. Then, from the directory that contains the Dockerfile and your compose file:
+
+```bash
+docker compose build
+docker compose up -d
+```
+
+After that, restarts will still use the image you built. To apply new code changes, run `docker compose build` again (or `docker compose build --no-cache` if needed), then `docker compose up -d`.
+
 ## Troubleshooting
 
 ### ActiveRecord::DatabaseConnectionError

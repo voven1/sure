@@ -1,0 +1,13 @@
+---
+ru:
+  activerecord:
+    attributes:
+      import:
+        currency: Валюта
+        number_format: Формат числа
+    errors:
+      models:
+        import:
+          attributes:
+            raw_file_str:
+              invalid_csv_format: неверный формат CSV

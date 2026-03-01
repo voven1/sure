@@ -1,0 +1,27 @@
+---
+ru:
+  invitations:
+    accept_choice:
+      create_account: Создать новый аккаунт
+      joined_household: Вы присоединились к домохозяйству.
+      message: "%{inviter} приглашает вас в качестве %{role}."
+      sign_in_existing: У меня уже есть аккаунт
+      title: Присоединиться к %{family}
+    create:
+      existing_user_added: Пользователь добавлен в ваше домохозяйство.
+      failure: Не удалось отправить приглашение
+      success: Приглашение отправлено
+    destroy:
+      failure: Не удалось удалить приглашение.
+      not_authorized: У вас нет прав на управление приглашениями.
+      success: Приглашение удалено.
+    new:
+      email_label: Email
+      email_placeholder: Введите email
+      role_admin: Администратор
+      role_guest: Гость
+      role_label: Роль
+      role_member: Участник
+      submit: Отправить приглашение
+      subtitle: Пригласите в ваш аккаунт %{moniker} в %{product_name}
+      title: Пригласить

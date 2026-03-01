@@ -1,0 +1,5 @@
+---
+ru:
+  pdf_import_mailer:
+    next_steps:
+      subject: "PDF-документ обработан — %{product_name}"

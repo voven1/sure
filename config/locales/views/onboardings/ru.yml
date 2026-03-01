@@ -1,0 +1,66 @@
+---
+ru:
+  onboardings:
+    header:
+      sign_out: Выйти
+      setup: Настройка
+      preferences: Настройки
+      goals: Цели
+      start: Начать
+    logout:
+      sign_out: Выйти
+    show:
+      title: Настроим ваш аккаунт
+      subtitle: Для начала заполним профиль.
+      first_name: Имя
+      first_name_placeholder: Имя
+      last_name: Фамилия
+      last_name_placeholder: Фамилия
+      group_name: Название группы
+      group_name_placeholder: Название группы
+      household_name: Название домохозяйства
+      household_name_placeholder: Название домохозяйства
+      moniker_prompt: "Будете использовать %{product_name} вместе с …"
+      moniker_family: Члены семьи (только вы или с партнёром, детьми и т.д.)
+      moniker_group: Группа людей (компания, клуб, объединение и т.п.)
+      country: Страна
+      submit: Продолжить
+    preferences:
+      title: Настройте предпочтения
+      subtitle: Настроим отображение и формат данных.
+      example: Пример счёта
+      preview: Предпросмотр по вашим настройкам
+      color_theme: Тема оформления
+      theme_system: Системная
+      theme_light: Светлая
+      theme_dark: Тёмная
+      locale: Язык
+      currency: Валюта
+      date_format: Формат даты
+      submit: Готово
+    goals:
+      title: Зачем вы здесь?
+      subtitle: Выберите одну или несколько целей использования %{product_name} для личных финансов.
+      unified_accounts: Видеть все счета в одном месте
+      cashflow: Понимать денежный поток и расходы
+      budgeting: Планировать бюджет и финансы
+      partner: Вести финансы вместе с партнёром
+      investments: Отслеживать инвестиции
+      ai_insights: Использовать ИИ для понимания финансов
+      optimization: Анализировать и оптимизировать счета
+      reduce_stress: Снизить финансовый стресс
+      submit: Далее
+    trial:
+      title: Попробуйте Sure 45 дней
+      data_deletion: После этого данные будут удалены
+      description_html: С сегодняшнего дня вы можете оценить продукт.<br/>Если понравится — разверните у себя или поддержите проект, чтобы продолжать пользоваться здесь.
+      try_button: Попробовать Sure 45 дней
+      continue_trial: Продолжить пробный период
+      upgrade: Перейти на полную версию
+      how_it_works: Как это устроено
+      today: Сегодня
+      today_description: Вам открыт бесплатный доступ к Sure на 45 дней на нашем AWS.
+      in_40_days: Через 40 дней (%{date})
+      in_40_days_description: Мы напомним экспортировать данные.
+      in_45_days: Через 45 дней (%{date})
+      in_45_days_description: Мы удалим ваши данные — поддержите проект, чтобы продолжать пользоваться Sure здесь!

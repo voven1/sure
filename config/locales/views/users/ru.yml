@@ -1,0 +1,17 @@
+---
+ru:
+  users:
+    destroy:
+      success: Ваш аккаунт удалён.
+    update:
+      email_change_failed: Не удалось изменить email.
+      email_change_initiated: Проверьте новый email — туда отправлена ссылка для подтверждения.
+      success: Профиль обновлён.
+    resend_confirmation_email:
+      success: Новое письмо с подтверждением поставлено в очередь на отправку.
+      no_pending_change: Смена email не запрашивалась.
+    reset:
+      success: Аккаунт сброшен. Данные будут удалены в фоне в ближайшее время.
+      unauthorized: У вас нет прав на это действие
+    reset_with_sample_data:
+      success: Аккаунт сброшен, подготавливаются демо-данные. Они скоро появятся в интерфейсе.
