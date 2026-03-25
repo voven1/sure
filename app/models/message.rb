@@ -1,6 +1,7 @@
 class Message < ApplicationRecord
   belongs_to :chat
   has_many :tool_calls, dependent: :destroy
+  has_one_attached :image
 
   enum :status, {
     pending: "pending",
@@ -8,7 +9,7 @@ class Message < ApplicationRecord
     failed: "failed"
   }
 
-  validates :content, presence: true
+  validates :content, presence: true, unless: -> { image.attached? }
 
   after_create_commit -> { broadcast_append_to chat, target: "messages" }, if: :broadcast?
   after_update_commit -> { broadcast_update_to chat }, if: :broadcast?
