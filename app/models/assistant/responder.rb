@@ -74,7 +74,7 @@ class Assistant::Responder
 
     def get_llm_response(streamer:, function_results: [], previous_response_id: nil)
       response = llm.chat_response(
-        message.content,
+        message.content.to_s,
         model: message.ai_model,
         instructions: instructions,
         functions: function_tool_caller.function_definitions,
@@ -83,7 +83,8 @@ class Assistant::Responder
         previous_response_id: previous_response_id,
         session_id: chat_session_id,
         user_identifier: chat_user_identifier,
-        family: message.chat&.user&.family
+        family: message.chat&.user&.family,
+        image: message.respond_to?(:image) && message.image.attached? ? message.image : nil
       )
 
       unless response.success?

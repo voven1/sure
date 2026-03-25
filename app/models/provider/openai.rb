@@ -184,7 +184,8 @@ class Provider::Openai < Provider
     previous_response_id: nil,
     session_id: nil,
     user_identifier: nil,
-    family: nil
+    family: nil,
+    image: nil
   )
     if custom_provider?
       generic_chat_response(
@@ -196,7 +197,8 @@ class Provider::Openai < Provider
         streamer: streamer,
         session_id: session_id,
         user_identifier: user_identifier,
-        family: family
+        family: family,
+        image: image
       )
     else
       native_chat_response(
@@ -209,7 +211,8 @@ class Provider::Openai < Provider
         previous_response_id: previous_response_id,
         session_id: session_id,
         user_identifier: user_identifier,
-        family: family
+        family: family,
+        image: image
       )
     end
   end
@@ -227,7 +230,8 @@ class Provider::Openai < Provider
       previous_response_id: nil,
       session_id: nil,
       user_identifier: nil,
-      family: nil
+      family: nil,
+      image: nil
     )
       with_provider_response do
         chat_config = ChatConfig.new(
@@ -251,7 +255,8 @@ class Provider::Openai < Provider
           nil
         end
 
-        input_payload = chat_config.build_input(prompt)
+        user_content = build_user_content(prompt, image)
+        input_payload = chat_config.build_input(user_content)
 
         begin
           raw_response = client.responses.create(parameters: {
@@ -320,13 +325,15 @@ class Provider::Openai < Provider
       streamer: nil,
       session_id: nil,
       user_identifier: nil,
-      family: nil
+      family: nil,
+      image: nil
     )
       with_provider_response do
         messages = build_generic_messages(
           prompt: prompt,
           instructions: instructions,
-          function_results: function_results
+          function_results: function_results,
+          image: image
         )
 
         tools = build_generic_tools(functions)
@@ -385,7 +392,7 @@ class Provider::Openai < Provider
       end
     end
 
-    def build_generic_messages(prompt:, instructions: nil, function_results: [])
+    def build_generic_messages(prompt:, instructions: nil, function_results: [], image: nil)
       messages = []
 
       # Add system message if instructions present
@@ -393,8 +400,9 @@ class Provider::Openai < Provider
         messages << { role: "system", content: instructions }
       end
 
-      # Add user prompt
-      messages << { role: "user", content: prompt }
+      # Add user message (text and optional image for vision)
+      user_content = build_user_content(prompt, image)
+      messages << { role: "user", content: user_content }
 
       # If there are function results, we need to add the assistant message that made the tool calls
       # followed by the tool messages with the results
@@ -445,6 +453,29 @@ class Provider::Openai < Provider
       end
 
       messages
+    end
+
+    def build_user_content(prompt, image)
+      if image.present? && image.attached?
+        parts = []
+        parts << { type: "text", text: prompt.presence || "(No text with image)" }
+        data_url = image_data_url(image)
+        parts << { type: "image_url", image_url: { url: data_url } } if data_url.present?
+        parts.size == 1 ? prompt : parts
+      else
+        prompt
+      end
+    end
+
+    def image_data_url(attachment)
+      return nil unless attachment.attached?
+
+      blob = attachment.blob
+      blob.open do |file|
+        base64 = Base64.strict_encode64(file.read)
+        mime = blob.content_type.presence || "image/jpeg"
+        "data:#{mime};base64,#{base64}"
+      end
     end
 
     def build_generic_tools(functions)

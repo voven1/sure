@@ -5,7 +5,8 @@
 
   <%= form_with model: model,
                 class: "flex lg:flex-col gap-2 bg-container px-2 py-1.5 rounded-full lg:rounded-lg shadow-border-xs",
-                data: { chat_target: "form" } do |f| %>
+                data: { chat_target: "form" },
+                html: { multipart: true } do |f| %>
 
     <%# In the future, this will be a dropdown with different AI models %>
     <%= f.hidden_field :ai_model, value: default_ai_model %>
@@ -17,8 +18,12 @@
 
     <div class="flex items-center justify-between gap-1">
       <div class="items-center gap-1 hidden lg:flex">
-        <%# These are disabled for now, but in the future, will all open specific menus with their own context and search %>
-        <% ["plus", "command", "at-sign", "mouse-pointer-click"].each do |icon| %>
+        <%= f.label :image, class: "cursor-pointer inline-flex p-1 rounded hover:bg-surface-hover text-secondary hover:text-primary", title: t("chats.attach_image") do %>
+          <%= icon("image", as_button: true, class: "pointer-events-none") %>
+        <% end %>
+        <%= f.file_field :image, accept: "image/*", class: "hidden" %>
+        <%# These are disabled for now, but in the future, will all open specific menus %>
+        <% ["command", "at-sign", "mouse-pointer-click"].each do |icon| %>
           <%= icon(icon, as_button: true, disabled: true, class: "cursor-not-allowed", title: "Coming soon") %>
         <% end %>
       </div>

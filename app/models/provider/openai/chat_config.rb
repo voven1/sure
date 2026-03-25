@@ -16,7 +16,8 @@ class Provider::Openai::ChatConfig
     end
   end
 
-  def build_input(prompt)
+  # content: string (plain text) or array of parts (e.g. text + image_url for vision)
+  def build_input(content)
     results = function_results.map do |fn_result|
       # Handle nil explicitly to avoid serializing to "null"
       output = fn_result[:output]
@@ -36,7 +37,7 @@ class Provider::Openai::ChatConfig
     end
 
     [
-      { role: "user", content: prompt },
+      { role: "user", content: content },
       *results
     ]
   end
